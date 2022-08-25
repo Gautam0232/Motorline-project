@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Motorline Login</title>
+        <link rel="stylesheet" href="loginStyle.css">
+    </head>
+    <body> 
+      <!-- header -->
+      <header>
+        <nav class = "navbar">
+          <div class = "container">
+            <a href = "home.html" class = "navbar-brand">Motorline</a>
+            <div class = "navbar-nav">
+              <a href = "home.html">home</a>
+              <a href = "">featured</a>
+              <a href = "">upcoming</a>
+              <a href = "">about</a>
+              <a href = "login.html">login</a>
+            </div>
+          </div>
+        </nav>
+        <div class="banner">
+          <div class="container">
+            <div class="login_box">
+              <h1 class="label">User Login</h1>
+              <form class="login_form" action="home.html" method="post" name="form" onsubmit="loginFunc()">
+                <div class="font">
+                  Username
+                </div>
+                <input autocomplete="off" type="text" name="username" id="username" placeholder="Username">
+                <div id="username_error">
+                  Username Invalid
+                </div>
+                <div class="font font2">
+                  Password
+                </div>
+                <input type="password" name="password" id="password" placeholder="***********">
+                <div id="pass_error">
+                  Password Invalid
+                </div>
+                <p id="result"></p>
+                <button type="submit">Login</button>
+                <p id="result"></p>
+                <a href="createacc.html">Create a Account</a>
+              </form>
+            </div>
+          </div>	
+        </header>
+        <script src="login.js"></script>
+
+      <!-- end of header -->
+    </body>
+</html>
